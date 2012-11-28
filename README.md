@@ -193,3 +193,13 @@ The only folder treated differently is __/var/www/__. Because this generally has
 The file structure of the system is kept within files, this should be a mirror of your root / directory.
 For example, after bootstrap.sh is run, files/etc/nginx/nginx.conf will map to /etc/nginx/nginx.conf.
 
+###Config Values
+
+The application contains three config files:
+
+    public/application/config/config.php - set application specific settings from line 358, such as cache expiry, CDN Ur         and encryption key.    
+    public/application/config/database.php - contains database connection details.     
+    public/application/config/memcached.php - contains memacache settings.
+    
+
+
